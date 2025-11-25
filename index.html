@@ -8,6 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Google Analytics 4 tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W008JXD8KM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W008JXD8KM');
+  </script>
+
   <style>
     :root {
       --brand: #0ea5e9;
@@ -51,7 +62,6 @@
     .inline-list { display: flex; gap: 14px; flex-wrap: wrap; }
     .kicker { font-weight: 700; color: var(--brand-dark); }
     .note { font-size: 0.95rem; }
-    /* Responsive */
     @media (min-width: 768px) {
       .hero { grid-template-columns: 1.2fr 1fr; align-items: center; }
       .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
@@ -88,7 +98,6 @@
           <p class="note muted">100% of your donation goes to our programs. Transparent reporting and measurable impact.</p>
         </div>
         <div class="hero-media">
-          <!-- Replace with a real image URL -->
           <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop" alt="Community aid in action" />
         </div>
       </section>
@@ -134,101 +143,4 @@
           <div class="muted">Schools supported</div>
         </div>
         <div class="stat">
-          <div class="value">24hr</div>
-          <div class="muted">Disaster response</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="section">
-    <div class="container">
-      <div class="grid">
-        <div class="testimonial">
-          <p class="quote">“Ashraful Aid showed up when we needed support the most. They didn’t just bring food—they brought hope.”</p>
-          <p class="muted">— Community partner, Gauteng</p>
-        </div>
-        <div class="testimonial">
-          <p class="quote">“Our learners are focused and confident thanks to stationery packs and daily meals. It’s life-changing.”</p>
-          <p class="muted">— School principal, KwaZulu-Natal</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Ashraful Aid</h2>
-      <p>We believe dignity and opportunity are the foundations of thriving communities. Through partnerships and volunteer power, we deliver practical support where it matters most—quickly, transparently, and with empathy.</p>
-      <div class="inline-list muted">
-        <span>Registered NPO</span>
-        <span>Donor transparency</span>
-        <span>Community-led</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Donate / Volunteer -->
-  <section id="donate" class="section">
-    <div class="container">
-      <div class="card">
-        <h2>Make your impact today</h2>
-        <p class="muted">Choose an amount and join the movement. Every rand helps us reach another family.</p>
-        <div class="cta">
-          <!-- Replace with your real GiveWP form URL or on-page form anchor -->
-          <a class="btn secondary" href="https://yourdomain.org/donate?utm_source=website&utm_medium=cta&utm_campaign=donate_button">Donate via GiveWP</a>
-          <a id="volunteer" class="btn primary" href="https://yourdomain.org/volunteer?utm_source=website&utm_medium=cta&utm_campaign=volunteer_button">Volunteer</a>
-        </div>
-        <p class="muted">Prefer EFT? Contact us for details and a receipt.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="muted">Questions or partnerships? We’d love to hear from you.</p>
-      <div class="grid">
-        <div class="card">
-          <h3>Email</h3>
-          <p><a href="mailto:info@ashrafulaid.org">info@ashrafulaid.org</a></p>
-        </div>
-        <div class="card">
-          <h3>Phone</h3>
-          <p><a href="tel:+27110000000">+27 11 000 0000</a></p>
-        </div>
-        <div class="card">
-          <h3>Address</h3>
-          <p class="muted">Johannesburg, Gauteng, South Africa</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="grid">
-        <div>
-          <strong>Ashraful Aid</strong>
-          <p class="muted">Together, we turn compassion into action.</p>
-        </div>
-        <div>
-          <p><a href="#about">About</a> · <a href="#programs">Programs</a> · <a href="#impact">Impact</a></p>
-          <p><a href="#donate">Donate</a> · <a href="#volunteer">Volunteer</a></p>
-        </div>
-      </div>
-      <p class="muted" style="margin-top:10px;">© <span id="year"></span> Ashraful Aid. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Dynamic year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>
+          <div class="value">24hr</div
